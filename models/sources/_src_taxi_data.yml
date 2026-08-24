@@ -1,0 +1,21 @@
+sources:
+  - name: taxi_data
+    description: This is the taxi data for the 2019 trips for yello and green taxi
+    database: terrsaform-stuff
+    schema: taxi_dataset
+
+    tables:
+      - name: green_tripdata
+        description: This is the green trip data table
+        columns:
+          - name: unique_row_id
+            data_tests:
+              - unique
+              - not_null
+      - name: yellow_tripdata
+        description: This is the yello trip data table
+        columns:
+          - name: unique_row_id
+            data_tests:
+              - unique
+              - not_null
