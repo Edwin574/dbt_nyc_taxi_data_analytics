@@ -19,3 +19,12 @@ sources:
             data_tests:
               - unique
               - not_null
+
+      - name: taxi_zone_lookup
+        description: This is the zones lookup table
+        columns:
+          - name: LocationID
+            data_tests:
+              - unique
+              - not_null
+              
