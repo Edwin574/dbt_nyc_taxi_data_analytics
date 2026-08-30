@@ -14,8 +14,10 @@ cast(fare_amount as numeric) as fare_amount,
 cast(extra as numeric) as extra,
 cast(mta_tax as numeric) as mta_tax,
 cast(tip_amount as numeric) as tip_amount,
+cast(1 as integer) as trip_type, --the trip_type is not present in yellow for us to union so we add it here. Not best approach though.
 cast(tolls_amount as numeric) as tolls_amount,
 cast(improvement_surcharge as numeric) as improvement_surcharge,
+cast(0 as numeric)as ehail_fee, --has 0 ehail fee by default
 cast(total_amount as numeric) as total_amount,
 cast(congestion_surcharge as numeric) as congestion_surcharge
 
