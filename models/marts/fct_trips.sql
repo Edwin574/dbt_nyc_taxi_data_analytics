@@ -5,6 +5,8 @@ with trip_details as (
         vendor_id,
         pickup_location_id,
         dropoff_location_id,
+        pickup_datetime,
+        dropoff_datetime,
         trip_type,
         payment_type,
         passenger_count,
