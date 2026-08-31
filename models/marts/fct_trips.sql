@@ -19,8 +19,16 @@ with trip_details as (
         congestion_surcharge,
         total_amount
 
+        -- row_number() over (
+        --     partition by row_id
+        --     order by pickup_datetime
+        -- ) as row_num
+
+
     from {{ ref('int_all_taxi_trips') }}
 
 )
 
-select * from trip_details
+select *
+from trip_details
+-- where row_num = 1

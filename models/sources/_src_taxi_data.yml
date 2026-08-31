@@ -10,12 +10,14 @@ sources:
         columns:
           - name: unique_row_id
             data_tests:
+              - unique
               - not_null
       - name: yellow_tripdata
         description: This is the yello trip data table
         columns:
           - name: unique_row_id
             data_tests:
+              - unique
               - not_null
 
       - name: taxi_zone_lookup
