@@ -39,4 +39,6 @@ models:
   nyc_taxi_data:
     staging:
       +materialized: view
+    marts:
+      +materialized: table
    
